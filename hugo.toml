@@ -2,6 +2,13 @@ baseURL = 'https://hansarick.com'
 languageCode = 'en-us'
 title = 'The Hansaricks'
 
+# Using docs directory for GitHub, since it likes either root or docs.
+# turning off the publish docs check
+publishDir = "docs"
+
+contentDir = "content"
+
+
 [params]
     # Enable Lunr.js offline search
     offlineSearch = true
