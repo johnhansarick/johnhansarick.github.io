@@ -29,6 +29,7 @@ url: "https://www.hansarick.com" # the base hostname & protocol for your site, e
 
 # Build settings
 theme: minima
+# theme: just_the_docs
 plugins:
   - jekyll-feed
 
