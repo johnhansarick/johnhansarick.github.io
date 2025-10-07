@@ -1,0 +1,16 @@
+baseURL = 'https://hansarick.com'
+languageCode = 'en-us'
+title = 'The Hansaricks'
+
+[params]
+    # Enable Lunr.js offline search
+    offlineSearch = true
+
+# Comment out if you don't want the "print entire section" link enabled.
+[outputs]
+  section = ["HTML", "print", "RSS"]
+
+[module]
+proxy = "direct"
+[[module.imports]]
+path = "github.com/google/docsy"
