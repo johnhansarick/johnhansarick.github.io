@@ -36,11 +36,9 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
-          publish_branch: github-pages #forces this workflow to update the wallaroo-documentation branch
+          publish_branch: github-pages #forces this workflow to update the github-pages branch
       
